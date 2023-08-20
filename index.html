@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1138265789665923152/1140981230314201088/L_4.png">
+  <title>Lutvy Stories</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+  <img src="https://media.discordapp.net/attachments/1138265789665923152/1140981230314201088/L_4.png" alt="Lutvy Stories Logo">
+  Lutvy Stories
+</div>
+      </div>
+      <div class="menu-button">
+        <div class="menu-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="tentangkami.html">Tentang Kami</a></li>
+          <li><a href="story.html">Story</a></li>
+          <li><a href="socialmedia.html">Social Media</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Matur Nuwun mas mbak yang udah mau liat website kuh 😘 </h2>
+      <p>INTINYA DISINI TUH GA ADA BAGUSNYA </p>
+      <a href="mimpi.html" class="btn"> CITA CITA </a>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const menuButton = document.querySelector(".menu-button");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuButton.addEventListener("click", function() {
+        navLinks.classList.toggle("active");
+      });
+    });
+  </script>
+</body>
+</html>

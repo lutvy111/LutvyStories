@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tentangkami.css">
+  <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1138265789665923152/1140981230314201088/L_4.png">
+
+  <title>Tentang Aku</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Tentang Aku?</div>
+      <div class="menu-button">
+        <div class="menu-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </nav>
+    <ul class="nav-links">
+   <li><a href="index.html">Beranda</a></li>
+ <li><a href="story.html">Story</a></li>
+          <li><a href="socialmedia.html">Social Media</a></li>
+    </ul>
+  </header>
+
+ <div class="hero">
+  <div class="hero-content">
+    <div class="about-box">
+      <h2>Tentang Aku?</h2>
+      <p>Aku Anaknya tuh pendiam baik hati nan kalem  🦖 RAWR KRAKATAU </p>
+    </div>
+  </div>
+</div>
+
+  <script>
+    const menuButton = document.querySelector('.menu-button');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuButton.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="socialmedia.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1138265789665923152/1140981230314201088/L_4.png">
+  <title>Social Media</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Social Media</div>
+    <div class="menu-button">
+      <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+  </nav>
+  <ul class="nav-links">
+    <li><a href="index.html">Beranda</a></li>
+    <li><a href="tentangkami.html">Tentang Kami</a></li>
+    <li><a href="story.html">Story</a></li>
+  </ul>
+
+  <div class="hero">
+    <div class="hero-content">
+      <div class="about-box">
+        <h2>Social Media Brok 🦖 Rawr</h2>
+        <!-- ... (your content) -->
+      </div>
+      <div class="social-links">
+        <a href="https://instagram.com/leach_exe?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCvuCmcS9sqK2w_vgwGGM0Qg/"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@leach_leach?_t=8eofBMaz8jg&_r=1/"><i class="fab fa-tiktok"></i></a>
+        <a href="https://discordapp.com/users/1030353004186046476E"><i class="fab fa-discord"></i></a>
+      </div>
+      
+      <iframe src="https://discord.com/widget?id=1111929725263302668&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" style="margin-top: 20px;"></iframe>
+    </div>
+  </div>
+
+  <script>
+    const menuButton = document.querySelector('.menu-button');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuButton.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Fungsi untuk menangani klik tautan navigasi
+    const navItems = document.querySelectorAll('.nav-links li a');
+    navItems.forEach(item => {
+      item.addEventListener('click', (event) => {
+        // Menghentikan perilaku default tautan
+        event.preventDefault();
+        
+        // Menghilangkan kelas "active" dari menu saat salah satu tautan diklik
+        navLinks.classList.remove('active');
+        
+        // Mendapatkan tautan yang diklik
+        const target = item.getAttribute('href');
+
+        // Pindah halaman ke tautan yang dituju
+        if (target) {
+          window.location.href = target;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+/* story.css */
+body {
+  margin: 0;
+  font-family: Courier New, sans-serif;
+}
+
+.navbar {
+  background-color: #279490;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.navbar .home-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.navbar .home-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.story-title {
+  margin: 0;
+}
+
+.chat {
+  padding: 20px;
+}
+
+.message {
+  max-width: 80%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.incoming {
+  background-color: #ECE5DD;
+  align-self: flex-start;
+}
+
+.outgoing {
+  background-color: #DCF8C6;
+  align-self: flex-end;
+}
+
+.message-content {
+  margin: 0;
+  padding: 5px;
+}
+
+/* ... Gaya-gaya sebelumnya ... */
+
+/* Gaya home icon dan teks */
+.home-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.home-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.story-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* ... Gaya-gaya selanjutnya ... */
